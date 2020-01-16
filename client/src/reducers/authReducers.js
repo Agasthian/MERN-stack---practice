@@ -1,11 +1,11 @@
-export default (state = {}, { type, payload }) => {
-  switch (type) {
-    // case typeName:
-    //   return { ...state, ...payload };
+import { FETCH_USER } from '../actions/types';
+
+export default (state = {}, action) => {
+  switch (action.type) {
+    case FETCH_USER:
+      return action.payload || false;
 
     default:
       return state;
   }
 };
-
-
