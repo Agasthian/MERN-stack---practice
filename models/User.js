@@ -4,7 +4,8 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose; // A Schema gives a predefined properties that our records have in DB
 
 const userSchema = new Schema({
-  googleId: String
+  googleId: String,
+  credits: { type: Number, default: 0 }
 }); //Here er create a user schema with googleId - string type
 
 mongoose.model('users', userSchema); //Instructing to creatre a new collection. Two arguments means we push new schema into arguments
