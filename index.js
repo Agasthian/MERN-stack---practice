@@ -27,10 +27,10 @@ app.use(passport.session());
 require('./routes/authRoutes')(app); //Including the auth Route(Route folder) into index and calling it with express app - writen using short hand (the file returns a function and we are calling it with express app) - STEP 2
 require('./routes/billingRoutes')(app);
 
-if (process.env.NODE_ENV === 'productions') {
+if (process.env.NODE_ENV === 'production') {
   //Express will serve up productions assets
   //like our main.js file or main.css file
-  app.use(express.static('/client/build'));
+  app.use(express.static('client/build'));
 
   //Express will serve up index.html file
   //if it doesnt  recoganize the routes
