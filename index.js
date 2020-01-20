@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const keys = require('./config/keys'); // keys.js fiels
 //Order of importing is important, add user model first and then passport
 require('./models/User'); // Including Mongoose User model class STEP 5
+require('./models/Surveys');
 require('./services/passport'); //Adding the passport file into the index file (passport is in service folder) - STEP 3
 
 mongoose.connect(keys.mongoURI); //Connecting Mongoose Library to Monogo DB Instance (from keys.js) STEP 4
