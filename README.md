@@ -1,4 +1,4 @@
-# 🚀 Project Title
+# 🚀Emaily MERN Stack
 
 Stephen Grider MERN stack Course . The MERN stack demonstrates a working application that uses a React frontend, with a backend build with ExpressJS and MongoDB. It shows how the client can make client HTTP requests to create a E-mail News letter campaign using Stripe payment.
 
